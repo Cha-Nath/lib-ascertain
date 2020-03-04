@@ -8,9 +8,10 @@ interface AllowTraitInterface {
      *
      * @param string $key
      * @param array $array
+     * @param boolean $onkey
      * @return boolean
      */
-    public function is_authorized(string $key, array $array) : bool;
+    public function is_authorized(string $key, array $array, bool $onkey = true) : bool;
     
     /**
      *

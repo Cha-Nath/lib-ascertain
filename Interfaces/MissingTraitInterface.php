@@ -8,9 +8,19 @@ interface MissingTraitInterface {
      *
      * @param array $keys
      * @param array $array
+     * @param boolean $onkey
      * @return boolean
      */
-    public function is_missing(array $keys, array $array) : bool;
+    public function is_missings(array $keys, array $array, bool $onkey = true) : bool;
+ 
+    /**
+     *
+     * @param string $key
+     * @param array $array
+     * @param boolean $onkey
+     * @return boolean
+     */
+    public function is_missing(string $key, array $array, bool $onkey = true) : bool;
 
     /**
      *
